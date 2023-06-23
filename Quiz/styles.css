@@ -1,0 +1,115 @@
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-from-left {
+  transform: translateX(-150%);
+}
+
+.slide-from-right {
+  transform: translateX(100%);
+}
+
+.quiz-slide {
+  display: flex;
+  flex-direction: column; /* Changed to column */
+  align-items: center; /* Added alignment */
+  justify-content: center; /* Added alignment */
+  transition: transform 0.3s ease;
+}
+
+.quiz-slide.active {
+  transform: translateX(0);
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto; /* Added margin auto */
+  max-width: 800px;
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.choice {
+  display: inline-block;
+  margin: 10px; /* Adjust the margin as desired */
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #808080;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+.choice.selected {
+  background-color: #00A36C;
+}
+
+#prev,
+#next {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #FF6F00; /* Update with your desired color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: #FFA726; /* Update with your desired hover color */
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #808080;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #00A36C;
+}
+
+#choices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; /* Adjust the grid gap as desired */
+  justify-items: center;
+  align-items: center;
+}
+
+#navigation {
+  margin-top: 20px;
+}
+
+#prev {
+  margin-right: 10px;
+}
+
+#next {
+  margin-left: 10px;
+}
