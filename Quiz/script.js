@@ -121,16 +121,11 @@ function showScoreScreen() {
   questionEl.textContent = `Quiz completed! Your score is: ${score} out of ${quizData.length}.`;
   imageEl.src = "";
   choicesEl.innerHTML = "";
-  counterEl.style.display = "none"; // Hide the "Questions Answered" counter
-  prevBtn.style.display = "none";
-  nextBtn.style.display = "none";
+  prevBtn.disabled = true;
+  nextBtn.disabled = true;
   submitBtn.style.display = "none";
   scoreScreenEl.style.display = "block";
   scoreScreenEl.appendChild(restartBtn);
-
-  // Remove the previous and next buttons
-  prevBtn.style.display = "none";
-  nextBtn.style.display = "none";
 }
 
 function restartQuiz() {
@@ -144,15 +139,8 @@ function restartQuiz() {
 
   updateCounter();
   loadQuestion();
-  hideResult();
-
-  // Hide the score screen
   scoreScreenEl.style.display = "none";
 }
-
-// Show the previous and next buttons
-prevBtn.style.display = "inline-block";
-nextBtn.style.display = "inline-block";
 
 function slideQuiz(direction) {
   const quizSlide = document.querySelector(".quiz-slide");
