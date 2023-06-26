@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "image": "paris.jpg",
+    "choices": ["London", "Paris", "Rome", "Berlin"],
+    "selectedChoice": -1,
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which planet is known as the \"Red Planet\"?",
+    "image": "mars.jpg",
+    "choices": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "selectedChoice": -1,
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the largest ocean in the world?",
+    "image": "pacific.jpg",
+    "choices": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "selectedChoice": -1,
+    "correctAnswer": 3
+  },
+  {
+    "question": "Which is the tallest mountain in the world?",
+    "image": "everest.jpg",
+    "choices": ["K2", "Kilimanjaro", "Mount Everest", "Matterhorn"],
+    "selectedChoice": -1,
+    "correctAnswer": 2
+  }
+]
